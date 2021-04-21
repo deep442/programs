@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct add
+{
+    int a,b;
+};
+typedef struct add N;
+void accept(int *a,int *b)
+{
+    printf("Enter two numbers:\n");
+    scanf("%d%d",a,b);
+}
+int sum(int a,int b)
+{
+    int result;
+    result=a+b;
+    return result;
+}
+void display(int res)
+{
+    printf("Sum=%d",res);
+}
+int main()
+{
+    N n1;
+    int res;
+    accept(&n1.a,&n1.b);
+    res=sum(n1.a,n1.b);
+    display(res);
+    return 0;
+}
