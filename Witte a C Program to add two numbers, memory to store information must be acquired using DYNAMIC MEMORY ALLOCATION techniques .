@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int *a,*b;
+    int n1,n2,sum=0;
+    a=(int*)malloc(sizeof(int));
+    b=(int*)malloc(sizeof(int));
+    scanf("%d%d",&n1,&n2);
+    *a=n1;
+    *b=n2;
+    sum=*a+*b;
+    printf("Sum=%d",sum);
+    return 0;
+}
