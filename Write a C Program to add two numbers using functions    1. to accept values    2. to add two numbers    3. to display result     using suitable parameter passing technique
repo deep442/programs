@@ -1,0 +1,24 @@
+#include<stdio.h>
+void accept(int *a,int *b)
+{
+    printf("Enter two numbers:\n");
+    scanf("%d%d",a,b);
+}
+int sum(int a,int b)
+{
+    int result;
+    result=a+b;
+    return result;
+}
+void display(int res)
+{
+    printf("Sum=%d",res);
+}
+int  main()
+{
+    int a,b,res;
+    accept(&a,&b);
+    res=sum(a,b);
+    display(res);
+    return 0;
+}
