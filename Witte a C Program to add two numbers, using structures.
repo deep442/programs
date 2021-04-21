@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct add
+{
+    int a,b;
+};
+typedef struct add N;
+int main()
+{
+    N n1;
+    scanf("%d%d",&n1.a,&n1.b);
+    printf("Sum=%d",n1.a+n1.b);
+    return 0;
+}
