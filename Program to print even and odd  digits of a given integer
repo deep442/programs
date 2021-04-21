@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+    int n,dig,temp;
+    printf("Enter the number\n");
+    scanf("%d",&n);
+    printf("Even digits of the integer is:\n");
+    temp=n;
+    while(temp>0)
+    {
+        dig=temp%10;
+        if(dig%2==0)
+        {
+            printf("%d\n",dig);
+        }
+        temp=temp/10;
+    }
+    printf("Odd digits of the integer is:\n");
+    temp=n;
+    while(temp>0)
+    {
+        dig=temp%10;
+        if(dig%2==1)
+        {
+            printf("%d\n",dig);
+        }
+        temp=temp/10;
+    }
+
+    return 0;
+}
