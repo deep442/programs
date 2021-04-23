@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+    int i,flag=0,n;
+    printf("Enter the number:\n");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        if(i*(i+1)==n)
+        {
+            flag=1;
+            break;
+        }
+    }
+    if(flag==1)
+    {
+        printf("It is a pronic number");
+    }
+    else
+    {
+        printf("Not a pronic number");
+    }
+    return 0;
+}
